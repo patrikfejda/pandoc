@@ -1,5 +1,9 @@
 # Pandoc (eisvogel)
 
+docker image published on [hub.docker.com](https://hub.docker.com/repository/docker/patrikfejda/pandoc)
+
+mantained on [github.com](https://github.com/patrikfejda/pandoc)
+
 ## Using with docker-compose.yml
 
 1. Create `input.md` ([example here](https://github.com/patrikfejda/pandoc/blob/main/template/input.md))
