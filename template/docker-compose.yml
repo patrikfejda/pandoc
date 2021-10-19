@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  pandoc:
+    image: patrikfejda/pandoc:latest
+    volumes:
+      - .:/data 
+    command: |
+      --pdf-engine xelatex
+      --listings
+      --template eisvogel --toc
+      input.md -o output.pdf
+      
