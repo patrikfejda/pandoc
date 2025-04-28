@@ -1,0 +1,14 @@
+services:
+  pandoc:
+    image: patrikfejda/pandoc:latest
+    volumes:
+      - .:/data 
+    command: >
+      --pdf-engine xelatex
+      --listings
+      --template eisvogel
+      -V fontsize=8pt
+      -V geometry:margin=2cm
+      -V pagestyle=empty
+
+      docs.md -o docs.pdf
